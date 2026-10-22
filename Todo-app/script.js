@@ -4,9 +4,15 @@ const list = document.getElementById('todo-list');
 const counter = document.getElementById('counter');
 const clearBtn = document.getElementById('clear-done');
 const filterBtns = document.querySelectorAll('[data-filter]');
+const dateElement = document.getElementById('date');
 
 let todos = JSON.parse(localStorage.getItem('todos')) || [];
 let filter = 'all';
+
+const today = new Date();
+const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+dateElement.textContent = today.toLocaleDateString(undefined, options);
+
 
 function save() {
   localStorage.setItem('todos', JSON.stringify(todos));
