@@ -1,5 +1,5 @@
 :root {
-  --doom-green: #3fae5b;
+  --doom-green: #074d19;
   --doom-green-dark: #1f6b35;
   --doom-metal: #8a949c;
   --doom-bg: #0b0f0d;
@@ -21,7 +21,7 @@ body {
 .title {
   font-family: 'Cinzel', serif;
   font-weight: 800;
-  letter-spacing: 4px;
+  letter-spacing: 8px;
   color: var(--doom-green);
   text-shadow: 0 0 12px rgba(63, 174, 91, 0.6);
 }
